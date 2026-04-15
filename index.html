@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Material - PrebuiltUI</title>
+        <link rel="stylesheet" href="./output.css" />
+        <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    </head>
+
+    <body>
+        <div class="flex w-full flex-wrap items-center justify-center bg-linear-to-r from-violet-500 to-violet-100 py-2 text-center font-medium text-white">
+            <p> Limited Seats — Health Coach Certification Program Now Open!</p>
+            <a href="https://calendly.com/revitalyoga75/new-meeting?month=2026-04" class="ml-3 flex items-center gap-1 rounded-md bg-white px-3 py-1 text-xs text-violet-600 transition hover:bg-slate-200 active:scale-95">
+                Book a Free Call Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-3.5" aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <nav class="sticky top-0 z-50 flex w-full items-center justify-between px-4 py-3.5 backdrop-blur-md md:px-16 lg:px-24">
+            <a href="/">
+                <img src="logo.jpeg" alt="logo" class="item-center h-9 w-auto" width="205" height="80" />
+            </a>
+
+        </nav>
+
+        <div id="mobileMenu" class="fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-white/20 text-lg font-medium backdrop-blur-2xl transition duration-300 md:hidden -translate-x-full">
+           
+
+            <a href="/" class="rounded-full btn px-8 py-2.5 font-medium text-white transition hover:opacity-90"> Sign Up </a>
+
+            <button id="closeMenu" class="rounded-md btn p-2 text-white ring-white active:ring-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <main class="px-4">
+            <section class="flex flex-col items-center justify-center relative h-svh overflow-hidden">
+                <svg class="absolute inset-0 -z-10" width="1440" height="1018" viewBox="0 0 1440 1018" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#a)">
+                        <ellipse cx="271.282" cy="200.379" rx="271.282" ry="200.379" fill="#FBFF"></ellipse>
+                    </g>
+                    <g filter="url(#b)">
+                        <ellipse cx="993.487" cy="451.53" rx="359.487" ry="265.53" fill="url(#c)" fill-opacity=".1"></ellipse>
+                    </g>
+                    <defs>
+                        <filter id="a" x="-300" y="-300" width="1142.56" height="1000.76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                            <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_8119_961"></feGaussianBlur>
+                        </filter>
+                        <filter id="b" x="333.9" y="-114.1" width="1319.18" height="1131.26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                            <feGaussianBlur stdDeviation="150.05" result="effect1_foregroundBlur_8119_961"></feGaussianBlur>
+                            <feTurbulence type="fractalNoise" baseFrequency="inf inf" stitchTiles="stitch" numOctaves="3" result="noise" seed="9943"></feTurbulence>
+                            <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"></feColorMatrix>
+                            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+                                <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"></feFuncA>
+                            </feComponentTransfer>
+                            <feComposite operator="in" in2="effect1_foregroundBlur_8119_961" in="coloredNoise1" result="noise1Clipped"></feComposite>
+                            <feFlood flood-color="rgba(0, 0, 0, 0.25)" result="color1Flood"></feFlood>
+                            <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1"></feComposite>
+                            <feMerge result="effect2_noise_8119_961">
+                                <feMergeNode in="effect1_foregroundBlur_8119_961"></feMergeNode>
+                                <feMergeNode in="color1"></feMergeNode>
+                            </feMerge>
+                        </filter>
+                        <linearGradient id="c" x1="550.41" y1="500.394" x2="1343.15" y2="82.986" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FBFF"></stop>
+                            <stop offset=".196" stop-color="#FF6E00"></stop>
+                            <stop offset=".407" stop-color="#F8C04D"></stop>
+                            <stop offset=".586" stop-color="#EF3EC2"></stop>
+                            <stop offset=".816" stop-color="#4700EC"></stop>
+                            <stop offset=".949" stop-color="#5100BA"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+               
+                <h1 class="text-4xl md:text-6xl/18 text-center font-semibold max-w-2xl mt-5 bg-gradient-to-r from-black to-[#748298] text-transparent bg-clip-text">
+
+                    <span class="bg-gradient-to-b from-indigo-300 to-indigo-600 bg-clip-text text-transparent">2 Days</span> of Free Healing Bootcamp.
+                </h1>
+
+                <h1
+                    class="text-4xl md:text-4xl/18 text-center font-semibold max-w-2xl mt-5 bg-gradient-to-r from-black to-[#748298] text-transparent bg-clip-text">
+                Transform Your Life by Healing 4 Core Areas
+
+                </h1>
+                <p class="text-slate-600 md:text-base max-md:px-2 text-center max-w-lg mt-3">Learn powerful healing techniques in just 2 days (1 hour each)
+and start creating balance in your Mind, Body, Emotions & Relationships</p>
+            <!--    <button class="flex items-center gap-8 btn hover:opacity-90 text-white px-8 py-8 mt-8 rounded-full transition" href="https://calendly.com/revitalyoga75/new-meeting?month=2026-04">
+                    <ul> Time
+<li> 4 PM – 6 PM</li>
+
+                    </ul>
+                    
+                </button> -->
+            </section>
+<section>
+
+
+
+
+    
+</section>
+
+
+
+
+            <section class="flex flex-col md:flex-row items-center justify-center gap-20 mt-20">
+        <div class="w-full border border-gray-200 p-6 rounded-xl mx-2 max-w-2xl bg-linear-to-r from-oklch(44.8% 0.119 151.328) to-oklch(79.2% 0.209 151.711) shadow-lg ">
+            <div class="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
+                    
+                    <div>
+                        <h3 class="text-base font-medium text-gray-800">
+                            Are you feeling
+                        </h3>
+                      
+                    </div>
+                </div>
+              
+            </div>
+            <ul class="list-disc px-5 mt-6 text-red-500 space-y-2">
+<li>😔 Mentally stressed or overthinking all the time?</li>
+<li>😔 Physically low on energy or facing health issues?</li>
+<li>😔 Emotionally stuck, anxious or overwhelmed?</li>
+<li>😔 Struggling in relationships or feeling disconnected?</li>
+            </ul>
+        </div>
+            
+            </section>
+
+
+<section class="flex flex-col md:flex-row items-center justify-center gap-20 mt-20">
+    <div
+        class="w-full border border-gray-200 p-6 rounded-xl mx-2 max-w-2xl bg-linear-to-r from-oklch(44.8% 0.119 151.328) to-oklch(79.2% 0.209 151.711) shadow-lg ">
+        <div class="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
+
+                <div>
+                    <h3 class="text-base font-medium text-gray-800">
+                        Benefits of Joining the Bootcamp
+                    </h3>
+                   
+                </div>
+            </div>
+          
+        </div>
+        <ul class="list-disc px-5 mt-6 text-green-500 space-y-2">
+            <li>✅ Feel calmer and mentally clear</li>
+            <li>✅ Increase your energy and body awareness</li>
+            <li>✅ Release emotional blockages</li>
+            <li>✅ Improve your relationships and social connections</li>
+            <li>✅ Experience inner peace and balance</li>
+            <li>✅ Start your healing journey confidently</li>
+        </ul>
+    </div>
+
+</section>
+
+
+            <section class="flex flex-col md:flex-row items-center justify-center gap-20 mt-20">
+                <div class="relative shadow-2xl shadow-indigo-600/40 rounded-2xl overflow-hidden shrink-0">
+                    <img class="max-w-sm w-full object-cover rounded-2xl" alt="" src="Priya Wadhwani.jpeg" />
+                    <div class="flex items-center gap-1 max-w-72 absolute bottom-8 left-8 bg-white p-4 rounded-xl">
+                       
+                        <p class="text-sm font-medium text-slate-800">Priya Wadhwani</p>
+                    </div>
+                </div>
+                <div class="text-sm text-slate-600 max-w-md">
+                    <h1 class="text-xl uppercase font-semibold text-slate-700">Founder</h1>
+                    <div class="w-24 h-[3px] rounded-full bg-gradient-to-r from-indigo-600 to-[#DDD9FF]"></div>
+                    <p class="mt-8">
+                        I , precious Priya Wadhwani🥰, am the founder of 'Revital yoga and healing centre' and my journey as yoga instructor
+                        with this wellness centre was started in January 2017. Years passed and have many Deep and holistic experience with
+                        yoga, Pranayam ,meditation and there impacts in our daily life.
+                        In 2020, I entered deep knowledge of holistic health with the help of 🙌Reiki healing , Ho'oponopono😌, gratitude
+                        ☺️healing, EFT 🙂‍↕️technique of emotional balance, love'ponopono😍 and many more techniques of NLP😇 gradually.
+                        With deep dives, I came to know ,90% people are suffering from many of health wealth relationship and career issues.
+                        I always wanted to help people to overcome there problems and with the grace of God ❣️ thousands of people connected
+                        with me and experienced drastic changes in there health and energy level.
+                        Always feel great to help you and give value to your life 🤗
+                    </p>
+                    <button class="flex items-center gap-2 mt-8 hover:opacity-90 transition btn py-3 px-8 rounded-full text-white" onclick="window.location.href='https://calendly.com/revitalyoga75/new-meeting'">
+                        <span>Let's Connect</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-5" aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+
+
+
+
+
+            <section class="flex flex-col items-center justify-center mt-40">
+                <div class="flex flex-col items-center justify-center">
+                    <h3 class="text-center text-[32px] font-semibold">Our Testimonials</h3>
+                    <p class="mt-3 max-w-xs text-center text-gray-500 md:max-w-lg">A visual collection of our most recent works - each piece crafted with intention, emotion, and style.</p>
+                </div>
+
+                <div class="flex items-center mr-auto gap-2 text-indigo-600 bg-indigo-50 rounded-full px-3 py-1">
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.613 8.2a.62.62 0 0 1-.553-.341.59.59 0 0 1 .076-.637l6.048-6.118a.31.31 0 0 1 .375-.069c.061.033.11.084.137.147a.3.3 0 0 1 .014.197L6.537 4.991a.59.59 0 0 0 .07.552.61.61 0 0 0 .504.257h4.276a.62.62 0 0 1 .553.341.59.59 0 0 1-.076.637l-6.048 6.119a.31.31 0 0 1-.375.067.295.295 0 0 1-.15-.344l1.172-3.61a.59.59 0 0 0-.07-.553.61.61 0 0 0-.504-.257z"
+                            stroke="#1E4BAF" stroke-miterlimit="5.759" stroke-linecap="round" />
+                    </svg>
+                    <span> Video Testimonials</span>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-10 mt-16">
+                    <div class="max-w-80 hover:-translate-y-0.5 transition duration-300">
+                    
+                        <video class="rounded-xl" alt="Autumn Leaf Harmony" src="Vedio 1.mp4" controls></video>
+                        <h3 class="text-base font-semibold text-slate-700 mt-4">Vibhuti Arora</h3>
+                    </div>
+                    <div class="max-w-80 hover:-translate-y-0.5 transition duration-300">
+                    
+                        <video class="rounded-xl" alt="Autumn Leaf Harmony" src="Video 3.mp4" controls></video>
+                        <h3 class="text-base font-semibold text-slate-700 mt-4">Sakshi Gurubakshani</h3>
+                    </div>
+<div class="max-w-80 hover:-translate-y-0.5 transition duration-300">
+
+    <video class="rounded-xl" alt="Autumn Leaf Harmony" src="Video 2.mp4" controls></video>
+    <h3 class="text-base font-semibold text-slate-700 mt-4">Usha Taneani</h3>
+</div>
+                </div>
+            </section>
+
+            <section class="flex flex-col items-center justify-center mt-40">
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+                
+                    * {
+                        font-family: 'Poppins', sans-serif;
+                    }
+                </style>
+                <section class="flex flex-col items-start px-6 md:px-16 lg:px-24 text-sm max-w-6xl mx-auto">
+                    <div class="flex items-center mr-auto gap-2 justify-center text-indigo-600 bg-indigo-50 rounded-full px-3 py-1">
+                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.613 8.2a.62.62 0 0 1-.553-.341.59.59 0 0 1 .076-.637l6.048-6.118a.31.31 0 0 1 .375-.069c.061.033.11.084.137.147a.3.3 0 0 1 .014.197L6.537 4.991a.59.59 0 0 0 .07.552.61.61 0 0 0 .504.257h4.276a.62.62 0 0 1 .553.341.59.59 0 0 1-.076.637l-6.048 6.119a.31.31 0 0 1-.375.067.295.295 0 0 1-.15-.344l1.172-3.61a.59.59 0 0 0-.07-.553.61.61 0 0 0-.504-.257z"
+                                stroke="#1E4BAF" stroke-miterlimit="5.759" stroke-linecap="round" />
+                        </svg>
+                        <span> Texted Testimonials</span>
+                    </div>
+                  
+                
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                
+                    <div
+                        class="border border-slate-200 p-6 rounded-lg hover:-translate-y-1 hover:shadow-xl hover:border-transparent transition duration-500">
+                        <p class="text-base text-slate-500">
+                            In Revital yoga I join 2020...that time I dont know anything about yoga.. meditation pranyam..but joining the classes
+                            and learn so many thing from basic to advanced...mam teach me each posture in easyway and also giving tips of dieting
+                            and detox body ....after yoga journey.. last year I learn healing .these was amazing experience... priya mam inspired me
+                            alot....she help me to connect to the soul... Thank you so much mam ...always inspire me😍😍best journey with Revital
+                            yoga
+                        </p>
+                        <div class="flex items-center gap-3 mt-8">
+                            
+                            <div>
+                                <h2 class="flex items-center gap-2 text-base text-gray-900 font-medium">Ritika Lulla                                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       
+                                    </svg>
+                                </h2>
+                               
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div
+                        class="border border-slate-200 p-6 rounded-lg hover:-translate-y-1 hover:shadow-xl hover:border-transparent transition duration-500">
+                        <p class="text-base text-slate-500"> I wanted to share my wonderful experience with the Revital Healing Club. The sessions provided me with much-needed peace
+                        of mind. 🧘‍♂️✨
+                        ​The knowledge of Reiki therapy and Yoga I gained there has truly transformed my life. 🕉️🙌 Additionally, the guidance
+                        on diet and daily routine was incredibly helpful. 🥗🕒
+                        ​I am deeply grateful for everything. Thank you so much! 🙏 Warm regards. ❤️</p>
+                        <div class="flex items-center gap-3 mt-8">
+                            
+                            <div>
+                                <h2 class="flex items-center gap-2 text-base text-gray-900 font-medium">
+                                    Sushma Tolwani
+                                 
+                                </h2>
+                              
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div
+                        class="border border-slate-200 p-6 rounded-lg hover:-translate-y-1 hover:shadow-xl hover:border-transparent transition duration-500">
+                        <p class="text-base text-slate-500"> Hariom mera naam manju puri hai. Maine yoga class join ki thi apni health improve karne aur thoda peace paane ke liye.
+                        Priya Bhabhi ke saath yoga karte hue bahut accha feel hota hai, unka way of teaching bahut simple aur comfortable hai.
+                        Yoga join karne ke baad meri body zyada flexible aur active ho gayi hai, aur main mentally bhi zyada calm aur relaxed
+                        feel karti hoon.
+                        Healing classes ne bhi mujhe andar se shanti aur positive energy di hai.
+                        Mujhe bahut accha lagta hai ki main is journey ka part hoon. Thank you Priya bhabhi</p>
+                        <div class="flex items-center gap-3 mt-8">
+                           
+                            <div>
+                                <h2 class="flex items-center gap-2 text-base text-gray-900 font-medium">
+                                Manju Puri
+                                  
+                                </h2>
+                               
+                            </div>
+                        </div>
+                    </div>
+                
+                    </div>
+                </section>
+
+                
+            </section>
+
+            <section class="flex flex-col items-center justify-center mt-40">
+
+                
+                <h1 class="text-4xl font-bold py-4 text-center">Let’s Get In Touch.</h1>
+                <p class="max-md:text-sm text-gray-500 pb-10 text-center">
+                    Or just reach out manually to us at <a href="#" class="text-indigo-600 hover:underline">hello@prebuiltui.com</a>
+                </p>
+           
+            <form class="flex flex-col  text-sm text-slate-800" action="https://formsubmit.co/revitalyoga75@gmail.com" method="post" enctype="text/plain">
+             
+           
+                <div class="grid grid-cols-2 gap-4 mb-5">
+                    <div>
+                        <label class="block text-sm text-gray-500 mb-2">First name</label>
+                        <input type="text" placeholder="David"
+                            class="w-full px-3 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-indigo-500 transition-colors" name="name" />
+                    </div>
+                    <div>
+                        <label class="block text-sm text-gray-500 mb-2">Last name</label>
+                        <input type="text" placeholder="Andrew"
+                            class="w-full px-3 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-indigo-500 transition-colors" name="lastname" />
+                    </div>
+                </div>
+            
+                <div class="mb-5">
+                    <label class="block text-sm text-gray-500 mb-2">Email id</label>
+                    <input type="email" placeholder="david@company.com"
+                        class="w-full px-3 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-indigo-500 transition-colors" name="email" />
+                </div>
+
+                <div class="mb-5">
+                    <label class="block text-sm text-gray-500 mb-2">Age</label>
+                    <input type="number" placeholder="25"
+                        class="w-full px-3 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-indigo-500 transition-colors"
+                        name="age" />
+                </div>
+            
+                <div class="mb-5">
+                    <label class="block text-sm text-gray-500 mb-2">Phone number</label>
+                    <div
+                        class="flex border border-gray-300 rounded-lg overflow-hidden focus-within:border-indigo-500 transition-colors">
+                        <input type="tel" placeholder="+1 342 123-456" class="flex-1 px-3 py-3 text-sm outline-none" name="phone" />
+                    </div>
+                </div>
+            
+                <div class="mb-5">
+                    <label class="block text-sm text-gray-500 mb-2">Message</label>
+                    <textarea rows="4"
+                        class="w-full px-3 py-3 border border-gray-300 rounded-lg text-sm outline-none resize-y focus:border-indigo-500 transition-colors" name="message"></textarea>
+                </div>
+            
+                <div class="flex items-center gap-2 mb-6">
+                   
+                    <button type="submit"
+                        class="flex items-center text-center gap-2 hover:opacity-90 transition btn py-3 px-8 rounded-full text-white" value="Send">
+                        Send message
+                    </button>
+                </div>
+            
+               
+            </form>
+            </div>
+            
+            <div
+                class="rounded-3xl p-10 relative min-h-[662px] w-full max-w-[520px] hidden md:flex flex-col justify-between overflow-hidden">
+                <img src="logo.jpeg" alt="3D shapes"
+                    class="absolute inset-0 w-full h-full object-cover" />
+            
+                <div class="relative z-10 mt-auto">
+                   
+                   
+                    <div class="flex justify-end gap-2 items-center">
+                        <div class="w-2.5 h-2.5 rounded-full bg-white"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-white"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-gray-400"></div>
+                    </div>
+                </div>
+                
+            
+                    
+            
+                   
+              
+            </form>
+        </section>
+        
+        </main>
+
+        <footer class="px-4 md:px-16 lg:px-24 text-[13px] mt-32 text-gray-500">
+            <div class="flex flex-wrap items-start min-md:justify-between gap-10 md:gap-[60px]">
+                
+                <div class="max-w-80">
+                    <p class="font-semibold text-gray-800">Contact Us</p>
+                    <ul class="mt-5 space-y-2">
+                        <li><a href="tel:+91 8770887765" class="hover:text-indigo-500 transition">+91 8770887765</a></li>
+                        <li><a href="mailto:revitalyoga75@gmail.com" class="hover:text-indigo-500 transition">revitalyoga75@gmail.com</a></li>
+                        <li><a href="https://calendly.com/revitalyoga75/new-meeting" class="hover:text-indigo-500 transition">Schedule a Meeting</a></li>
+                    </ul>
+                </div>
+               
+                
+                <div class="max-w-80 md:ml-40">
+                    <p class="mt-5 text-sm">Made with ❤️ by <a href="https://www.manovasofts.com/" class="hover:text-indigo-500 transition">Team Manova</a></p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row py-7 mt-12 border-gray-200 md:justify-between max-md:items-center border-t max-md:text-center gap-2 items-end">
+                <p class="text-center">© 2025 <a href="">Priya Wadhwani, All rights reserved.</a></p>
+                <div class="flex items-center gap-4">
+                  
+                  
+                    </a>
+                    <a href="https://www.instagram.com/priya_wadhwani10?igsh=cmJscXJwbGFibzl0" target="_blank" rel="noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/priya.wadhwani.9081323" target="_blank" rel="noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/script.js"></script>
+    </body>
+</html>
