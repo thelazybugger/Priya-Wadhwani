@@ -74,7 +74,7 @@ export default function Navbar() {
 
       {open && (
         <div
-          className="md:hidden border-t border-[rgba(148,128,214,0.15)] bg-[#faf6ed]"
+          className="md:hidden border-t border-[rgba(148,128,214,0.15)] bg-white"
           data-testid="navbar-mobile-menu"
         >
           <div className="px-6 py-4 flex flex-col gap-4">

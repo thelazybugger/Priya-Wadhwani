@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="App min-h-screen bg-[#faf6ed] text-[#0a0a0a]">
+    <div className="App min-h-screen bg-white text-[#0a0a0a]">
       <BrowserRouter>
         <Navbar />
         <main>
@@ -30,7 +30,7 @@ function App() {
         position="bottom-center"
         toastOptions={{
           style: {
-            background: "#ffffff",
+            background: "#faf6ed",
             color: "#0a0a0a",
             border: "1px solid rgba(148,128,214,0.2)",
           },
