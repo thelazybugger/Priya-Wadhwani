@@ -1,0 +1,104 @@
+{
+  "project_name": "Mindful Yoga Studio",
+  "domain": "Health, Wellness, Yoga",
+  "theme": "light",
+  "archetype": "Archetype 1 (Organic & Earthy) infused with soft lavender",
+  "emotional_tone": "Calm, grounded, luxurious, mindful, and elegant.",
+  "colors": {
+    "background": {
+      "primary": "#faf6ed",
+      "secondary": "#ffffff",
+      "accent_soft": "#f2ecfa"
+    },
+    "brand": {
+      "primary": "#9480d6",
+      "primary_hover": "#7c68bf",
+      "secondary": "#faf6ed"
+    },
+    "text": {
+      "primary": "#0a0a0a",
+      "secondary": "#4b4b4b",
+      "muted": "#737373",
+      "on_brand": "#ffffff"
+    },
+    "border": {
+      "subtle": "rgba(148, 128, 214, 0.15)",
+      "strong": "#9480d6"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "headings": "Cormorant Garamond",
+      "body": "Manrope",
+      "cta": "Manrope"
+    },
+    "sizing": {
+      "h1": "text-5xl sm:text-6xl tracking-tighter leading-none font-light",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-medium",
+      "h3": "text-2xl sm:text-3xl tracking-tight",
+      "body": "text-base leading-relaxed font-normal",
+      "small_label": "text-xs tracking-[0.2em] uppercase font-semibold"
+    },
+    "rules": {
+      "headings": "Never center by default; use left-alignment for organic reading flow. Use font-light or font-medium for an editorial, elegant look rather than heavy bolds.",
+      "body": "Keep line lengths comfortable (max-w-prose). Ensure body text is easily readable against the cream background."
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": {
+      "section_padding": "py-24 md:py-32",
+      "element_gap": "gap-8 md:gap-12",
+      "container_padding": "px-6 md:px-12 lg:px-24"
+    },
+    "grid_system": "The Bento Grid Protocol - Mode A (Tetris). Emphasize asymmetry. Overlap images over text containers slightly to break rigid box structures.",
+    "border_radius": "rounded-2xl or rounded-3xl for soft, inviting edges. Avoid harsh sharp corners.",
+    "surface_treatment": {
+      "cards": "Solid flat backgrounds (#ffffff or #f2ecfa) with delicate 1px border (#9480d6 at 15% opacity). No heavy drop shadows; use subtle, diffuse ambient shadow if necessary: shadow-[0_8px_32px_rgba(148,128,214,0.05)].",
+      "hero_overlay": "Do NOT use heavy black/white blankets. Let the image breathe. If text must overlay the image, use a delicate gradient or backdrop-blur with low opacity."
+    }
+  },
+  "components": {
+    "navigation": "Sticky header using 'Optical Clarity' glassmorphism (backdrop-blur-xl bg-[#faf6ed]/80). Include a clear 'Book Now' CTA button.",
+    "buttons": "Primary CTAs: bg-[#9480d6] text-white rounded-full px-8 py-3 hover:bg-[#7c68bf] transition-colors. Secondary: border border-[#9480d6] text-[#9480d6] rounded-full px-8 py-3 hover:bg-[#9480d6]/5.",
+    "forms": "Minimalist Shadcn inputs. Use border-b only (flair/elegant) or softly rounded inputs with very subtle borders. No heavy box shadows.",
+    "payment_section": "Razorpay integration on 'Book Now' flow. Checkout card should be clean, distraction-free, using a white background over the cream body to elevate the transaction area. Clearly display class details, price, and secure payment badges.",
+    "cards_and_listings": "For Classes and Blog: Avoid standard rigid grids. Alternate image left/right layouts or use staggered masonry-style layouts."
+  },
+  "motion_and_interactions": {
+    "hover_states": "-translate-y-1 transform transition-transform duration-300 ease-out. Images should have a slow, subtle scale effect on hover (scale 105 over 0.8s).",
+    "page_load": "Use staggered fade-up animations (Framer Motion) for text blocks and images. Keep it slow and deliberate to match the mindful, zen aesthetic.",
+    "scroll": "Consider adding Lenis for smooth momentum scrolling to make the site feel premium."
+  },
+  "media": {
+    "image_urls": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1761971975973-cbb3e59263de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwzfHx5b2dhJTIwc3R1ZGlvJTIwaW50ZXJpb3IlMjBtb3JuaW5nJTIwbGlnaHR8ZW58MHx8fHwxNzc2NjY2Njg2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern yoga studio with large windows and natural light. Perfect for an asymmetrical hero layout."
+      },
+      "about_section": {
+        "url": "https://images.pexels.com/photos/6958601/pexels-photo-6958601.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Woman practicing yoga gracefully in a modern, airy studio. Use for the philosophy or instructor highlight."
+      },
+      "classes_listing_1": {
+        "url": "https://images.pexels.com/photos/8436402/pexels-photo-8436402.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Diverse group practicing yoga. Use for Vinyasa or group class descriptions."
+      },
+      "classes_listing_2": {
+        "url": "https://images.pexels.com/photos/4056406/pexels-photo-4056406.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Two women embracing a yoga pose. Great for partner yoga or specialized workshops."
+      }
+    },
+    "style_rules": "Images must have rounded corners matching the layout (rounded-2xl). Avoid slapping generic gradients over them."
+  },
+  "testing": {
+    "data_testid_rules": "All interactive elements (buttons, links, form inputs) must include role-based data-testid attributes (e.g., data-testid='hero-book-now-button', data-testid='contact-submit')."
+  },
+  "instructions_to_main_agent": [
+    "Ensure HTML/Tailwind is used for primary marketing layouts to maintain asymmetry and fluidity. Avoid rigidly wrapping everything in Shadcn 'Card' components.",
+    "Implement a sticky navigation with a blurred cream background.",
+    "Integrate Razorpay correctly for the 'Book Now' flow inside the Classes section.",
+    "Use Cormorant Garamond for headings and Manrope for body text. Do not use Inter.",
+    "Use the specific colors requested: #9480d6 for accents/buttons and #faf6ed for the main background.",
+    "Include 'data-testid' on all actionable elements."
+  ]
+}
